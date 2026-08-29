@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" width="1200" height="1500" role="img" aria-label="Placeholder">
+  <rect width="1200" height="1500" fill="#f2eee8"/>
+  <g>
+    <circle cx="600" cy="750" r="312" fill="none" stroke="#1a1815" stroke-width="1.5" opacity=".5"/>
+    <text x="600" y="750" font-family="Georgia, serif" font-size="288" fill="#1a1815" opacity=".85" text-anchor="middle" dominant-baseline="central">DC</text>
+  </g>
+  <text x="600" y="1395" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4.615384615384615" fill="#8b847c" text-anchor="middle">DRUSTVENE MREZE &#183; PLACEHOLDER 1200&#215;1500</text>
+</svg>

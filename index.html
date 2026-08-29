@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dora Cvetković — grafički dizajn i vizualni identiteti</title>
+  <meta name="description" content="Portfolio Dore Cvetković, magistre grafičke tehnologije: vizualni identiteti, priprema za tisak i vizuali za društvene mreže.">
+  <meta name="author" content="Dora Cvetković">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dora Cvetković — grafički dizajn i vizualni identiteti">
+  <meta property="og:description" content="Vizualni identiteti, priprema za tisak i vizuali za društvene mreže.">
+  <!-- TODO(dora): add og:image once a real project shot exists. Must be PNG or JPEG,
+       1200x630 — social platforms do not render SVG previews. Then switch
+       twitter:card back to summary_large_image. -->
+  <meta property="og:locale" content="hr_HR">
+  <meta property="og:locale:alternate" content="en_GB">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/fraunces-latin-ext-600.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-latin-ext-400.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Dora Cvetković",
+    "jobTitle": "Grafička dizajnerica",
+    "address": { "@type": "PostalAddress", "addressLocality": "Zagreb", "addressCountry": "HR" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "Grafički fakultet, Sveučilište u Zagrebu" },
+      { "@type": "CollegeOrUniversity", "name": "Sapienza Università di Roma" }
+    ],
+    "knowsAbout": ["Vizualni identitet", "Priprema za tisak", "Grafička tehnologija", "Adobe Illustrator", "Adobe InDesign"],
+    "knowsLanguage": ["hr", "en", "de", "it"]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Prijeđi na sadržaj</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="wordmark" href="#top">Dora Cvetković</a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle
+              aria-expanded="false" aria-controls="site-nav"
+              data-i18n-attr="aria-label:nav.toggle">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="site-nav" data-i18n-attr="aria-label:nav.aria" aria-label="Glavna navigacija">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#work" data-i18n="nav.work">Rad</a></li>
+          <li><a class="nav__link" href="#about" data-i18n="nav.about">O meni</a></li>
+          <li><a class="nav__link" href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+
+        <div class="lang" role="group" data-i18n-attr="aria-label:lang.aria" aria-label="Jezik stranice">
+          <button class="lang__btn" type="button" data-lang-btn="hr" aria-pressed="true"
+                  data-i18n-attr="title:lang.hr">HR</button>
+          <button class="lang__btn" type="button" data-lang-btn="en" aria-pressed="false"
+                  data-i18n-attr="title:lang.en">EN</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ---------- Hero ---------- -->
+    <section class="hero" id="top">
+      <div class="container">
+        <p class="eyebrow reveal" data-i18n="hero.eyebrow">Portfolio</p>
+        <h1 class="hero__name reveal">Dora Cvetković</h1>
+        <p class="hero__role reveal" data-i18n="hero.role">Grafički dizajn i vizualne komunikacije</p>
+        <p class="hero__intro reveal" data-i18n="hero.intro">
+          Magistra inženjerka grafičke tehnologije. Radim vizualne identitete, pripremu za tisak i vizuale
+          za digitalne kanale — s iskustvom u složenim poslovnim sustavima i koordinaciji procesa, pa
+          projekt dovodim do kraja, a ne samo do makete.
+        </p>
+        <div class="hero__actions reveal">
+          <a class="btn btn--primary" href="#work" data-i18n="hero.ctaWork">Pogledaj radove</a>
+          <a class="btn btn--ghost" href="#contact" data-i18n="hero.ctaContact">Javi mi se</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Work ---------- -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="work.eyebrow">Rad</p>
+            <h2 class="section__title" data-i18n="work.title">Odabrani projekti</h2>
+          </div>
+          <p class="section__note" data-i18n="work.note">
+            Radovi u pripremi — prikazani su rezervirani vizuali dok se ne postave stvarni projekti.
+          </p>
+        </div>
+
+        <!-- Chips are rendered from SITE.categories -->
+        <div class="work__filters" id="work-filters" role="group"
+             data-i18n-attr="aria-label:work.filterAria" aria-label="Filtriraj radove po kategoriji"></div>
+
+        <!-- Cards are rendered from SITE.projects -->
+        <div class="work__grid" id="work-grid"></div>
+        <p class="work__empty" id="work-empty" hidden>Nema projekata u ovoj kategoriji.</p>
+      </div>
+    </section>
+
+    <!-- ---------- About ---------- -->
+    <section class="section section--sunken" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">O meni</p>
+            <h2 class="section__title" data-i18n="about.title">Dizajn s razumijevanjem proizvodnje</h2>
+          </div>
+        </div>
+
+        <div class="about__grid">
+          <div class="portrait reveal">
+            <!-- TODO(dora): replace with a real portrait (assets/img/dora-cvetkovic-portret.jpg) -->
+            <img src="assets/img/portrait-placeholder.svg" alt="Portret — rezervirano mjesto za fotografiju"
+                 data-i18n-attr="alt:about.portraitAlt" loading="lazy" decoding="async" width="900" height="1200">
+          </div>
+
+          <div class="reveal">
+            <div class="about__bio">
+              <p data-i18n="about.p1">
+                Izražene kreativne i analitičke vještine, timski rad i osjećaj za kvalitetu i detalje.
+                Studij grafičke tehnologije dao mi je ono što se u dizajnu često izgubi: razumijevanje
+                kako se datoteka pretvara u tiskani proizvod.
+              </p>
+              <p data-i18n="about.p2">
+                Kroz Erasmus na Sapienzi u Rimu radila sam na design thinkingu, dizajnu usluga i
+                interakcija — s naglaskom na korisničko iskustvo i timski rad na međunarodnim projektima.
+              </p>
+            </div>
+
+            <!-- Skill groups are rendered from SITE.skills -->
+            <div class="about__blocks" id="skills"></div>
+
+            <div class="about__blocks">
+              <div class="block">
+                <h3 class="block__title" data-i18n="about.education">Obrazovanje</h3>
+                <div id="education"></div>
+              </div>
+              <div class="block">
+                <h3 class="block__title" data-i18n="about.experience">Iskustvo</h3>
+                <div id="experience"></div>
+              </div>
+              <div class="block">
+                <h3 class="block__title" data-i18n="about.languages">Jezici</h3>
+                <ul class="block__list" id="languages"></ul>
+              </div>
+            </div>
+
+            <p style="margin-top: var(--s-7)">
+              <a class="btn btn--ghost" href="assets/cv/dora-cvetkovic-cv.pdf" download
+                 data-i18n="about.cv">Preuzmi CV (PDF)</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- Contact ---------- -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+            <h2 class="section__title" data-i18n="contact.title">Kontakt</h2>
+          </div>
+        </div>
+
+        <div class="contact__grid reveal">
+          <div>
+            <p class="contact__lead" data-i18n="contact.lead">Otvorena za suradnje i nove projekte.</p>
+            <!-- href and text are assembled in JS from SITE.email -->
+            <a class="contact__mail" id="contact-mail" href="#"
+               data-i18n-attr="aria-label:contact.mailAria" aria-label="Pošalji e-poruku"></a>
+            <p class="card__meta" style="margin-top: var(--s-4)" data-i18n="contact.location">Zagreb, Hrvatska</p>
+          </div>
+
+          <div class="block">
+            <h3 class="block__title" data-i18n="contact.linksTitle">Profili</h3>
+            <!-- Rendered from SITE.links — add the URLs in js/data.js -->
+            <div class="links" id="contact-links"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Dora Cvetković. <span data-i18n="footer.rights">Sva prava pridržana.</span></p>
+      <a href="#top" data-i18n="footer.top">Na vrh</a>
+    </div>
+  </footer>
+
+  <!-- ---------- Lightbox ---------- -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true"
+       data-i18n-attr="aria-label:lightbox.aria" aria-label="Pregled projekta">
+    <div class="lightbox__inner">
+      <div class="lightbox__bar">
+        <div>
+          <h2 class="lightbox__title" data-lb-title></h2>
+          <p class="lightbox__meta" data-lb-meta></p>
+          <p class="lightbox__summary" data-lb-summary></p>
+        </div>
+        <button class="lightbox__close" type="button" data-lb-close
+                data-i18n-attr="aria-label:lightbox.close" aria-label="Zatvori">&times;</button>
+      </div>
+
+      <div class="lightbox__stage" data-lb-stage></div>
+
+      <div class="lightbox__nav" data-lb-nav hidden>
+        <button type="button" data-lb-prev
+                data-i18n-attr="aria-label:lightbox.prev" aria-label="Prethodna slika">&larr;</button>
+        <span data-lb-counter></span>
+        <button type="button" data-lb-next
+                data-i18n-attr="aria-label:lightbox.next" aria-label="Sljedeća slika">&rarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/data.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+  <script src="js/work.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

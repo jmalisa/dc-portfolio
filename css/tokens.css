@@ -1,0 +1,60 @@
+/* Design tokens. Change the palette here and the whole site follows. */
+
+:root {
+  /* --- Colour: warm near-white ground, ink text, one restrained accent --- */
+  --c-bg:          #faf8f5;
+  --c-bg-sunken:   #f2eee8;
+  --c-surface:     #ffffff;
+  --c-ink:         #1a1815;
+  --c-ink-soft:    #55504a;
+  --c-ink-faint:   #8b847c;
+  --c-rule:        #e2dcd3;
+  --c-accent:      #a4442f;
+  --c-accent-soft: #f0e2dc;
+  --c-focus:       #1a1815;
+
+  /* --- Type --- */
+  --f-display: "Fraunces", "Iowan Old Style", Georgia, "Times New Roman", serif;
+  --f-body:    "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+
+  /* Fluid scale, 360px -> 1440px viewport */
+  --t-xs:   0.75rem;
+  --t-sm:   0.875rem;
+  --t-base: 1rem;
+  --t-md:   clamp(1.0625rem, 1rem + 0.3vw,  1.1875rem);
+  --t-lg:   clamp(1.25rem,  1.1rem + 0.7vw, 1.625rem);
+  --t-xl:   clamp(1.75rem,  1.4rem + 1.6vw, 2.75rem);
+  --t-2xl:  clamp(2.5rem,   1.7rem + 3.6vw, 5rem);
+  --t-3xl:  clamp(3rem,     1.6rem + 6.2vw, 7.5rem);
+
+  --lh-tight: 1.05;
+  --lh-snug:  1.25;
+  --lh-body:  1.65;
+  --ls-caps:  0.16em;
+
+  /* --- Space (8px base) --- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: clamp(4rem, 9vw, 9rem);   /* section rhythm */
+
+  /* --- Layout --- */
+  --w-page: 76rem;
+  --w-text: 38rem;
+  --gutter: clamp(1.25rem, 5vw, 4rem);
+  --radius: 2px;
+
+  /* --- Motion --- */
+  --e-out:  cubic-bezier(0.22, 1, 0.36, 1);
+  --d-fast: 160ms;
+  --d-base: 320ms;
+  --d-slow: 620ms;
+
+  --header-h: 4.5rem;
+}

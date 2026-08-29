@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900" role="img" aria-label="Placeholder">
+  <rect width="1200" height="900" fill="#f2eee8"/>
+  <g>
+    <line x1="330" y1="270" x2="870" y2="270" stroke="#1a1815" stroke-width="1.5" opacity=".5"/>
+    <line x1="330" y1="360" x2="789" y2="360" stroke="#1a1815" stroke-width="1.5" opacity=".5"/>
+    <line x1="330" y1="450" x2="708" y2="450" stroke="#a4442f" stroke-width="1.5" opacity=".5"/>
+    <line x1="330" y1="540" x2="627" y2="540" stroke="#1a1815" stroke-width="1.5" opacity=".5"/>
+    <line x1="330" y1="630" x2="546" y2="630" stroke="#1a1815" stroke-width="1.5" opacity=".5"/>
+  </g>
+  <text x="600" y="837" font-family="Helvetica, Arial, sans-serif" font-size="22.5" letter-spacing="3.4615384615384617" fill="#8b847c" text-anchor="middle">TISAK I PAKIRANJE &#183; PLACEHOLDER 1200&#215;900</text>
+</svg>

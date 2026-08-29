@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" width="1200" height="1200" role="img" aria-label="Placeholder">
+  <rect width="1200" height="1200" fill="#f2eee8"/>
+  <g>
+    <rect x="402" y="402" width="180" height="180" fill="none" stroke="#1a1815" stroke-width="1.5" opacity=".55"/>
+    <rect x="594" y="402" width="180" height="180" fill="none" stroke="#1a1815" stroke-width="1.5" opacity=".55"/>
+    <rect x="402" y="594" width="180" height="180" fill="none" stroke="#1a1815" stroke-width="1.5" opacity=".55"/>
+    <rect x="594" y="594" width="180" height="180" fill="#a4442f" stroke="#1a1815" stroke-width="1.5" opacity=".55"/>
+  </g>
+  <text x="600" y="1116" font-family="Helvetica, Arial, sans-serif" font-size="30" letter-spacing="4.615384615384615" fill="#8b847c" text-anchor="middle">DRUSTVENE MREZE &#183; PLACEHOLDER 1200&#215;1200</text>
+</svg>

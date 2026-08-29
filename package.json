@@ -1,0 +1,14 @@
+{
+  "name": "dc-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static portfolio site for Dora Cvetkovic. The site itself needs no build step and no dependencies; this file exists only for the test suite.",
+  "scripts": {
+    "test": "node test/content.test.js && node test/dom.test.js",
+    "test:content": "node test/content.test.js",
+    "serve": "node -e \"const h=require('http'),f=require('fs'),p=require('path'),M={'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.woff2':'font/woff2','.pdf':'application/pdf'};h.createServer((q,s)=>{let x=p.join(process.cwd(),q.url==='/'?'/index.html':q.url.split('?')[0]);if(!f.existsSync(x)||f.statSync(x).isDirectory()){s.writeHead(404);return s.end()}s.writeHead(200,{'content-type':M[p.extname(x)]||'application/octet-stream'});s.end(f.readFileSync(x))}).listen(4321,()=>console.log('http://localhost:4321'))\""
+  },
+  "devDependencies": {
+    "jsdom": "^30.0.1"
+  }
+}
